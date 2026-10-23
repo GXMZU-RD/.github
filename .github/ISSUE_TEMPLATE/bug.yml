@@ -1,0 +1,16 @@
+name: 问题报告
+description: 现象 / 复现 / 期望
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes: {label: 现象, description: 报错贴原文，不要截图代替文本}
+    validations: {required: true}
+  - type: textarea
+    id: repro
+    attributes: {label: 复现, description: 一步步怎么重现；没有复现步骤的会被退回}
+    validations: {required: true}
+  - type: textarea
+    id: expect
+    attributes: {label: 期望, description: 本来应该是什么样}
+    validations: {required: true}
